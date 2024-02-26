@@ -1,0 +1,14 @@
+<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_80_102" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-1" width="31" height="31">
+<rect x="0.410645" y="-0.000976562" width="30" height="30" fill="url(#pattern0)"/>
+</mask>
+<g mask="url(#mask0_80_102)">
+<rect x="0.410645" y="-9.37598" width="38.125" height="39.375" fill="white"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_80_102" transform="scale(0.0208333)"/>
+</pattern>
+<image id="image0_80_102" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABDNJREFUaEPVmk2IXEUQx6tmd9lbTnoJePHgIZCTXgW/QPbVrHuJyhoTETV+oLAYQQnEREwISFYRFaMx4kZJ/CAszlbVuIi6iKiHiEbQXAQRDBJCQOKcdJgKPcwbXsZ5r3tm+s1mB5aFffW6f/+uqu7q2kEYw2dubu66ZrP5OgBsQsSPmPlIrGkx1kB54xDRjQBwOvvczF5Q1f0x5i5VwOzs7DWtVutCP9BWq3V7vV7/clQRpQogok8B4K4cyKMisuuqFVCtVnea2VIB4D9mtlVV/xhFRGkeqFarX5jZbUVwZrZdVU9cdQKI6E4A+MwHhogHmHmvz67oeSkeIKKDALDHB4aIp5h5m89uPQR8DQA3B4CdFZEtAXa5JmV5wEKhRKTLMDMzs2VqaupirVY7H/p+dAEOolKp/BIIMC8iHzrbJEn2IWJ6uN0jIp+EjBFdABHdDQAfB0y+Q0Q+6MDvR8R92Xeazebm1dXVv3zjRBeQJMn/YHohzOxBVX0vD979fd0EENFhANidt3Jm9oiqvlMEb2b3qmqIFyG6B4joLQDoWyKY2WOq6p67mO/rKTO7T1VP+kInfV6GAHeyzvcJmydV9Q0P/E5VfT8U3tlFF5AkSQ0RZ7MQiLjAzK964Lt5kdkIvgOA783sx8nJyTO1Wu3nXnHRBRDRVwBwS9fFiLuZ+eUieAB4WESOORvPLnbGFYjT09PHl5eXL5biASJyIXB/e3DEZ5n5JQ/8oyLydgB8dvH/NLNj7lIU3QPVavWQmT2HiHuY+ZAH/gkReXNA+KyQxegCiOghANgsIi8WwSPiU8zs7sm+sCnK6bXoAlwpUa/Xf/XAd5N6gJO7n5C4AjoX+OtdHVNwIj8jIosjrnwqZkc0D2RX0nUdemub3qQeceXdBnGCmbdHERACk03qEPuCwP8bAJ4XkdeibKMhMIi4l5kPjBg2lwBgyczeVdWfopQSIfDZJlaIfc/K/wsAn5vZ6YmJiaWVlZXfo53ESZLMu6IrBAoRbzWzawHgDgC4IXNKN8ysgYjt3+4HAC5UKhV3IzvfaDS+WVtbaxbto0PlgIN3SWRmR1T18QARN4nID4MUaaG2AwtI4dMJAkQEXw9DobN2wwhYRMSns4MUiCgVfqBdqHMw/SciB5MkCRFROnywgJ5TtX2S+kSEdhWGCZuBQqhfSWBm7dtVjohtqnpqVLDQ9wtzoDdhr1COuIuZj2ZFmNlY4b0h1CmN2x2Efh9EfICZjzsRAPDtOFc++CQO6PN0u2uhbo9p5wshb5MKAMay2+RGQd6DgJV3r64rfG4OFDSdsnX+usP3FVAE77oARLRgZr+pKseM5WHHuiIHfPDDTlLme10BGxG+G0IbFb4tYCPDtwUQ0TnXiOopj6N9l6HM+E8FvAIAC+lEMb+IUTZ8W0DnCxnpP9ROpo3WcUweY47LYtVEOdwQlXEAAAAASUVORK5CYII="/>
+</defs>
+</svg>

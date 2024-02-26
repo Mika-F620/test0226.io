@@ -1,0 +1,58 @@
+/** @format */
+
+@use "common" as g;
+
+.header{
+  width: 100%;
+  // height: 167px;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  // background: linear-gradient(to bottom, #000, #d9d9d9);
+  // background: linear-gradient(#000, 75%, #d9d9d9);
+  background: linear-gradient(rgba(0,0,0,1), 80%,rgba(0,0,0,0));
+  &__inner{
+    max-width:90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link{
+    display: block;
+  }
+  
+}
+
+  .global-nav{
+    &__nav{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+    &__navList {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+    }
+
+    &__navList-link {
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+    &__navList-img{
+      width: 4vw;
+      height: 3.5vw;
+    }
+  }
+  
+
+  .header__img {
+    display: flex;
+    align-items: center;
+  }
+

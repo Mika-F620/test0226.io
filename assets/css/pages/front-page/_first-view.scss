@@ -1,0 +1,105 @@
+/** @format */
+
+@use "../../global/common" as g;
+
+.mv{
+  background-image: url(/assets/img/pages/top-mv2x.jpg);
+  // (質問)背景画像をもっと、このサイト（https://ja.wix.com/website-template/view/html/3060?originUrl=https%3A%2F%2Fja.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Frestaurants-food%2Fbar-club&tpClick=view_button&esi=d1e13f25-e8b8-4f64-9146-954e15698c6f）みたいに固定させて、
+  // 　　　全面だけ動くだけみたいな指定にしたいのですが、前に模写のサイト（https://code-jump.com/demo/html/store/）の指定を参考に_common.scssに.fix-bgの指定をしたのですが、上手くいかないです。どうすれば、もっと背景画像は固定されて、全面の.mv__titleだけ追従してくるようになるでしょうか。。？
+  // （回答）こちら私の方では、背景が固定されているのですが、あまりイメージ通りになっていない感じですかね？
+  //        もし背景画像のスピードなどを細かく指定したい場合は、JSを使う形になります。
+  //        以下のサイトがご参考になるかなと思いますがいかがでしょうか？
+  //        https://autovice.jp/articles/164
+}
+
+.mv__title {
+  background: rgb(0, 0, 0, 0.75);
+  width: 49vw;
+  height: 48vw;
+  margin: 40px auto;
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+
+  .mv__title-border {
+    border-radius: 100px;
+    border: 1px solid #fff;
+    width: 43vw;
+    height: 42vw;
+    margin: auto;
+  }
+
+  .mv__store-name {
+    font-size: 7.2rem;
+    // （質問）7.2remにしたのですが、画面幅を狭くしても、画面幅に応じて文字小さくならないのですが、rem指定ってそもそも、vwと違うから、画面幅で伸縮しない？でしょうか。。？画面幅が小さくなったら文字も小さくしたいです。
+    // （回答）画面幅に応じてとなりますとvwが良いです！remは、画面幅に応じて変化してくれないので。。
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Fredericka the Great';
+    font-weight: normal;
+  }
+
+  .mv__moko-img {
+    // （質問）もこちゃんの画像が二倍で書き出しても画像が荒かったので４倍で書き出しても荒くて、どうすれば画質良くなると思いますか。。？
+    // （回答）SVG形式で書き出すといかがでしょうか？それでも画質荒いですかね。。
+    position: absolute;
+    width: 28vw;
+    height: 35vw;
+    top: 15vw;
+    left: -0.8vw;
+
+  }
+
+  .mv__grace{
+    position: absolute;
+    width: 15vw;
+    height: 17vw;
+    bottom: 5vw;
+    right: 3vw;
+
+  }
+
+  .mv__text {
+    position: absolute;
+    width: 15vw;
+    height: 13vw;
+    top: 21vw;
+    left: 16vw;
+}
+
+  .mv__footPrint-01 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 3vw;
+    right: -8vw;
+    // （以下解決済み）
+    // （質問）fixed-bgではなくmv__titleに対して、topとreightの設定をしたいのですが、ピクセル指定ではなく、％指定の方が良いと思いますか？また、今のピクセル指定はなぜ上手くいかず間延した肉球になってしますのでしょうか？
+    //     //（回答）vwの方が良いかなと思いました！画面幅に合わせて柔軟に位置調整してくれるので、調整しやすいかと思います！
+    //        画像が間延びしてしまうことについてですが、こちらは画像（img）に対して特に横幅を指定しないと元々の画像の大きさ（pxの絶対値）のままになります。
+    //        そのためtopとrightを固定（px）で指定してしまうと、イメージとしてはそこに画鋲が刺さっている感じになりまして、画面幅に合わせて伸びたり縮んだりします。
+    //        もしそれを防ぎたい場合は、imgに対して横幅を100%で指定してあげると間延びはしなくなるかと思います！
+    // （質問）_common.scssでimgに対してwidth:100%;にして、top: 6.19vw;    right: -18.1vh;にしたのですが、デザインのような位置に来てくれません。
+    //       .fixed-bgではなく、.mv__title に対して、topやrightを指定したいのですが、出来ませんでした。どんな指定が足りないもしくは、間違っているからデザインの位置にきてくれないのでしょうか？
+    // （回答）なるほど、そういうことですね！でしたら、横幅（width）やtop、rightを全てvwで指定した方が良いです！vwの変換は、https://web-generates.com/calc/px-to-vw/をご利用ください。
+    //        vwは、親要素というよりページ（端末）の横幅が、大きく関わってきます！
+    // （質問） .mv__footPrint-01と .mv__footPrint-02のwidth,height,top,rightの全てをvw指定にしたのですが、若干デザインの位置違ってきたり、img自体の大きさが違ってきてしまいます。
+    // 　　　　これは何故でしょうか？また、先ほど送っていただいたサイトhttps://web-generates.com/calc/px-to-vw/で、pxからvw変換すると小数点が出てきてしまいますが、何桁くらいで繰り上げ、繰り下げしますか？
+    //        尚、font-sizeは普通vw指定でしょうか？それともem指定でしょうか？
+    // （回答）位置が微妙に違うことについてですが、今回、1つ目の足跡の画像や犬も画像が傾いているようなデザインになっていたりと単純にデザインの数値で調整ができるような感じでは無いので、多少、見た目に合わせて調整する必要があると思いました。
+    //　　　　 また、レスポンシブ調整もする必要があり、それはメディアクエリを使って調整する必要があります。
+    // 　　　　小数点についてですが、なるべく出てきた数値をそのまま指定した方が良いかなと思います。繰り上げたり、繰り下げたりするとvwは大きく変わってしまいやすい単位ではありますので。
+    // 　　　　基本的にこのようなvwを使うのは、デザインを崩したくないような時に使います。positionでテキストを載せたり、改行したく無いような時です。
+    // 　　　　通常、フォントサイズは、remで指定することが多いです！
+
+  }
+
+  .mv__footPrint-02 {
+    position: absolute;
+    width: 16vw;
+    height: 13vw;
+    top: 15vw;
+    right: 4vw;
+  }
+}

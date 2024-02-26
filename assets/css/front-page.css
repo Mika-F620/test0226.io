@@ -1,0 +1,136 @@
+/** @format */
+/** @format */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+}
+
+a, p {
+  font-family: "Zen Maru Gothic";
+}
+
+img {
+  width: 100%;
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left 110% top 30%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 100px 0;
+  height: 862px;
+  width: 100%;
+}
+
+/** @format */
+.header {
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: linear-gradient(rgb(0, 0, 0), 80%, rgba(0, 0, 0, 0));
+}
+.header__inner {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  display: block;
+}
+
+.global-nav__nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.global-nav__navList {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.global-nav__navList-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.global-nav__navList-img {
+  width: 4vw;
+  height: 3.5vw;
+}
+
+.header__img {
+  display: flex;
+  align-items: center;
+}
+
+/** @format */
+.mv {
+  background-image: url(/assets/img/pages/top-mv2x.jpg);
+}
+
+.mv__title {
+  background: rgba(0, 0, 0, 0.75);
+  width: 49vw;
+  height: 48vw;
+  margin: 40px auto;
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+}
+.mv__title .mv__title-border {
+  border-radius: 100px;
+  border: 1px solid #fff;
+  width: 43vw;
+  height: 42vw;
+  margin: auto;
+}
+.mv__title .mv__store-name {
+  font-size: 7.2rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Fredericka the Great";
+  font-weight: normal;
+}
+.mv__title .mv__moko-img {
+  position: absolute;
+  width: 28vw;
+  height: 35vw;
+  top: 15vw;
+  left: -0.8vw;
+}
+.mv__title .mv__grace {
+  position: absolute;
+  width: 15vw;
+  height: 17vw;
+  bottom: 5vw;
+  right: 3vw;
+}
+.mv__title .mv__text {
+  position: absolute;
+  width: 15vw;
+  height: 13vw;
+  top: 21vw;
+  left: 16vw;
+}
+.mv__title .mv__footPrint-01 {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  top: 3vw;
+  right: -8vw;
+}
+.mv__title .mv__footPrint-02 {
+  position: absolute;
+  width: 16vw;
+  height: 13vw;
+  top: 15vw;
+  right: 4vw;
+}/*# sourceMappingURL=front-page.css.map */

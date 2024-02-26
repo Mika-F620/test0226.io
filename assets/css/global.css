@@ -1,0 +1,72 @@
+/** @format */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+}
+
+a, p {
+  font-family: "Zen Maru Gothic";
+}
+
+img {
+  width: 100%;
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left 110% top 30%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 100px 0;
+  height: 862px;
+  width: 100%;
+}
+
+/** @format */
+.header {
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: linear-gradient(rgb(0, 0, 0), 80%, rgba(0, 0, 0, 0));
+}
+.header__inner {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  display: block;
+}
+
+.global-nav__nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.global-nav__navList {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.global-nav__navList-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.global-nav__navList-img {
+  width: 4vw;
+  height: 3.5vw;
+}
+
+.header__img {
+  display: flex;
+  align-items: center;
+}
+
+/** @format *//*# sourceMappingURL=global.css.map */
